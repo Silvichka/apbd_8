@@ -9,6 +9,8 @@ builder.Services.AddScoped<ITripsService, TripsService>();
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddScoped<ITripsService, TripsService>();
+builder.Services.AddScoped<IClientService, ClientService>();
 
 var app = builder.Build();
 
